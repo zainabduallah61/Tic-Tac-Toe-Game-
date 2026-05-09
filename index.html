@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#548687">
+    <link rel="manifest" href="manifest.json">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>TIC TAC TOE</h1>
+    <div class="scoreboard">
+        <div class="status">Player X turn</div>
+        <button class="reset-btn">Restart</button>
+    </div>
+    <div class="container">
+        <div class="group">
+            <button class="box" data-index="0"></button>
+            <button class="box" data-index="1"></button>
+            <button class="box" data-index="2"></button>
+            <button class="box" data-index="3"></button>
+            <button class="box" data-index="4"></button>
+            <button class="box" data-index="5"></button>
+            <button class="box" data-index="6"></button>
+            <button class="box" data-index="7"></button>
+            <button class="box" data-index="8"></button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js');
+            });
+        }
+    </script>
+</body>
+</html>
