@@ -2,7 +2,7 @@
     "name": "Tic Tac Toe Game",
     "short_name": "TicTacToe",
     "description": "A fun Tic Tac Toe game with celebrations",
-   "start_url": "/Tic-Tac-Toe-Game-/index.html",
+  "start_url": "./index.html",
     "display": "standalone",
     "background_color": "#548687",
     "theme_color": "#548687",
